@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Nuevo Producto</title>
+      <style>
+            div {
+                  border: 3px solid black;
+                  width: 300px;
+                  padding-left: 100px;
+                  padding-right: 100px;
+                  padding-bottom: 100px;
+                  padding-top: 50px;
+                  margin: 10%;
+            }
+      </style>
+</head>
+<body>
+      <div>
+            <form action="/datosGuardados.html">
+                  <h1>Registro de productos</h1> <br>
+                  <label for="codigo">Código: </label>
+                  <input type="text" id="codigo" placeholder="Ingrese el código del producto"> <br> <br>
+
+                  <label for="descripcion">Descripción: </label>
+                  <input type="text" id="descripcion" placeholder="Ingrese descripcion"> <br> <br>
+
+                  <label for="codigoBarra">Código de barras: </label>
+                  <input type="text" id="codigoBarra" placeholder="Ingrese el código de barras"> <br> <br>
+
+                  <label for="precio">Precio unitario: </label>
+                  <input type="text" id="precioUnit" placeholder="Ingrese precio unitario"> <br> <br>
+
+                  <label for="stock">Stock: </label>
+                  <input type="text" id="stock" placeholder="Ingrese cantidad del producto"> <br> <br>
+
+                  <label for="proveedor">Proveedor: </label>
+                  <input type="text" id="proveedor" placeholder="Ingrese nombre de proveedor"> <br> <br>
+
+                  <label for="estado">Estado: </label>
+                  <input type="checkbox" id="estado"> Activo <br> <br>
+
+                  <label for="categoria">Categoría: </label>
+                  <select name="categoria" id="categoria">
+                        <option value="Categoría 1">Categoría 1</option>
+                        <option value="Categoría 2">Categoría 2</option>
+                        <option value="Categoría 3">Categoría 3</option>
+                        <option value="Categoría 4">Categoría 4</option>
+                  </select> <br><br><br>
+
+                  <input type="submit" id="submit" value="Guardar">
+
+                  <button id="cancelar" onclick="location.href='/index.html'" type="button">Cancelar</button>
+            </form>
+      </div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Inventario</title>
+      <style>
+            table, tr, th, td {
+                  border: 1px solid black;
+                  text-align: center;
+            }
+            #nuevo {
+                  background-color: green;
+                  color: white;
+            }
+            .editar {
+                  background-color: blue;
+                  color: white;
+            }
+            .eliminar {
+                  background-color: red;
+                  color: white;
+            }
+      </style>
+</head>
+<body>
+      <h1>Inventario de productos</h1>
+
+      <table style="width: 80%;">
+            <tr>
+                  <th>
+                        <button id="nuevo" onclick="location.href='/producto.html'" type="button"><span style="font-size: 20px;"><b>+</b></span> Nuevo</button>
+                  </th>
+                  <th>Código</th>
+                  <th>Descripción</th>
+                  <th>Código de barra</th>
+                  <th>Precio<br>unitario</th>
+                  <th>Stock</th>
+                  <th>Proveedor</th>
+                  <th>Estado</th>
+                  <th>Categoría</th>
+            </tr>
+            <tr>
+                  <td>
+                        <button class="editar"><img src="/pencil.png" alt="Editar" width="10px">Editar</button>
+                        <button class="eliminar"><img src="/delete.png" alt="Eliminar" width="10px">Eliminar</button>
+                  </td>
+                  <td>1</td>
+                  <td>Martillo</td>
+                  <td>101253151489</td>
+                  <td>2.50</td>
+                  <td>10</td>
+                  <td>Proveedor 1</td>
+                  <td>Sí</td>
+                  <td>Herramientas</td>
+            </tr>
+            <tr>
+                  <td>
+                        <button class="editar"><img src="/pencil.png" alt="Editar" width="10px">Editar</button>
+                        <button class="eliminar"><img src="/delete.png" alt="Eliminar" width="10px">Eliminar</button>
+                  </td>
+                  <td>2</td>
+                  <td>Kit de herramientas</td>
+                  <td>258981235849</td>
+                  <td>10.50</td>
+                  <td>20</td>
+                  <td>Proveedor 2</td>
+                  <td>Sí</td>
+                  <td>Herramientas</td>
+            </tr>
+      </table>
+</body>
+</html>
